@@ -87,4 +87,6 @@ li{
     font-size: 0.9rem;
 }
 
-
+.clearAll:hover{
+    color: #e985b7;
+}
