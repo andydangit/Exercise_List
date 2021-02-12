@@ -1,8 +1,7 @@
 // selectors
 document.querySelector("form").addEventListener("submit", handleSubmitForm);
-document
-  .querySelector("ul")
-  .addEventListener("click", handleClickDeleteOrCheck);
+document.querySelector("ul").addEventListener("click", handleClickDeleteOrCheck);
+document.getElementById("clearAll").addEventListener("click", handleClearAll);
 
 // Event Handlers
 function handleSubmitForm(e) {
@@ -14,9 +13,13 @@ function handleSubmitForm(e) {
 
 // check icon
 function handleClickDeleteOrCheck(e) {
-  if ((e.target.name = "checkButton")) checkTodo(e);
+  if (e.target.name == "checkButton") checkTodo(e);
 
-  if ((e.target.name = "deleteButton")) deleteTodo(e);
+  if (e.target.name == "deleteButton") deleteTodo(e);
+}
+
+function handleClearAll(e) {
+  document.querySelector("ul").innerHTML = "";
 }
 
 // Helpers
@@ -41,4 +44,12 @@ function checkTodo(e) {
   else item.style.textDecoration = "line-through";
 }
 
-function deleteTodo(e) {}
+function deleteTodo(e) {
+  let item = e.target.parentNode;
+
+  item.addEventListener("transitionend", function () {
+    item.remove();
+  });
+
+  item.classList.add("todo-list-item-fall");
+}
