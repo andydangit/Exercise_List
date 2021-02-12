@@ -22,6 +22,37 @@ html{
     max-width: 500px;
     padding: 1.5rem 0;
     align-items: center;
-    
+}
 
+.main{
+    padding: 20px;
+}
+
+form{
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+}
+
+input[type="text"] {
+    height: 30px;
+    outline: 0;
+    border: none;
+    font-size: 1rem;
+    font-family: "Relaway", sans-serif;
+    color: #595959;
+    flex-grow: 1;
+}
+
+button{
+    font-size: 1.5rem;
+    background-color: #ffffff;
+    outline: 0;
+    border: none;
+    color: #595959;
+}
+
+button:hover{
+    color: #e985b7;
 }
