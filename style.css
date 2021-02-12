@@ -65,3 +65,26 @@ button:hover{
     height: 100%;
 }
 
+ul{
+    padding-left: 0px;
+    list-style: none;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #bebec7;
+    padding: 15px 0;
+    font-size: 1rem;
+    color: #595959;
+}
+
+.clearAll{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 3px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+
