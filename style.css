@@ -56,3 +56,12 @@ button{
 button:hover{
     color: #e985b7;
 }
+
+.exerciseList{
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px, 25px;
+    height: 100%;
+}
+
