@@ -1,6 +1,8 @@
 // selectors
 document.querySelector("form").addEventListener("submit", handleSubmitForm);
-document.querySelector("ul").addEventListener("click", handleClickDeleteOrCheck);
+document
+  .querySelector("ul")
+  .addEventListener("click", handleClickDeleteOrCheck);
 document.getElementById("clearAll").addEventListener("click", handleClearAll);
 
 // Event Handlers
@@ -55,18 +57,22 @@ function deleteTodo(e) {
 }
 
 ///////////////////////////////////////////////////////////////
-// adding color change from click 
+// adding color change from click
 
-document.addEventListener("keydown", function(e){
-  changeColor (e.key);
-})
+document.addEventListener("keydown", function (e) {
+  changeColor(e.key);
+});
 
-function changeColor(key){
-  switch(key) {
+function changeColor(key) {
+  switch (key) {
     case "c":
-      document.querySelector("html").style.backgroundColor = "red"
+      document.querySelector("html").style.backgroundColor = "red";
       break;
-      default: 
-      console.log(colorInnerHTML)
+    case "b":
+      document.querySelector("html").style.backgroundColor = "yellow";
+      break;
+
+    default:
+      console.log(colorInnerHTML);
   }
 }
