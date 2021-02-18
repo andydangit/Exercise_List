@@ -61,3 +61,12 @@ document.addEventListener("keydown", function(e){
   changeColor (e.key);
 })
 
+function changeColor(key){
+  switch(key) {
+    case "c":
+      document.querySelector("html").style.backgroundColor = "red"
+      break;
+      default: 
+      console.log(colorInnerHTML)
+  }
+}
