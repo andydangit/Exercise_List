@@ -53,3 +53,11 @@ function deleteTodo(e) {
 
   item.classList.add("todo-list-item-fall");
 }
+
+///////////////////////////////////////////////////////////////
+// adding color change from click 
+
+document.addEventListener("keydown", function(e){
+  changeColor (e.key);
+})
+
