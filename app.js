@@ -46,6 +46,8 @@ function checkTodo(e) {
   else item.style.textDecoration = "line-through";
 }
 
+////////////////
+// delete 
 function deleteTodo(e) {
   let item = e.target.parentNode;
 
@@ -86,7 +88,7 @@ function deleteTodo(e) {
 // }
 
 ///////////////////////////
-// function to create random color
+// Create random color
 function createRandomColor() {
   const hexParts = "0123456789ABCDEF";
   let color = "#";
@@ -95,6 +97,8 @@ function createRandomColor() {
   }
   return color;
 }
+
+///////////////////////////////////////////////////////////
 
 // this add the Alt + C to change the background color 
 document.addEventListener ("keydown", function (zEvent) {
