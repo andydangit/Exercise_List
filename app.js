@@ -131,10 +131,36 @@ document.addEventListener ("keydown", function (zEvent) {
   }
 } );
 
-// Mac Command + C
-document.addEventListener ("keydown", function (zEvent) {
-  if (zEvent.metaKey  &&  zEvent.key === "c") { 
+///////////////////////////////////////////////////
+
+
+// For Mac cmd + C / cmd 1,2,3,4
+document.addEventListener ("keydown", function (mEvent) {
+  if (mEvent.metaKey  &&  zEvent.key === "c") { 
     document.querySelector("html").style.backgroundColor = createRandomColor();
+  }
+} );
+
+document.addEventListener ("keydown", function (mEvent) {
+  if (mEvent.metaKey  &&  zEvent.key === "1") { 
+    document.querySelector("html").style.fontSize = "medium";
+  }
+} );
+
+document.addEventListener ("keydown", function (mEvent) {
+  if (mEvent.metaKey  &&  zEvent.key === "2") { 
+    document.querySelector("html").style.fontSize = "large";
+  }
+} );
+document.addEventListener ("keydown", function (mEvent) {
+  if (mEvent.metaKey  &&  zEvent.key === "3") { 
+    document.querySelector("html").style.fontSize = "x-large";
+  }
+} );
+
+document.addEventListener ("keydown", function (mEvent) {
+  if (mEvent.metaKey  &&  zEvent.key === "4") { 
+    document.querySelector("html").style.fontSize = "xx-large";
   }
 } );
 //////////////////////////////////////////////////////////
