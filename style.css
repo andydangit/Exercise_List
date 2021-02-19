@@ -107,3 +107,11 @@ i{
     transform: translateY(12rem) rotateZ(10deg);
     opacity: 0;
 }
+
+.note{
+    padding: 10px;
+    background-color: #98b8dd;
+    width: 270px;
+    margin-left: 20px;
+
+}
