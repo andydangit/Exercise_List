@@ -103,3 +103,27 @@ document.addEventListener ("keydown", function (zEvent) {
   }
 } );
 
+// Add font size increase below when pressing alt + num 
+document.addEventListener ("keydown", function (zEvent) {
+  if (zEvent.altKey  &&  zEvent.key === "1") {  
+    document.querySelector("html").style.fontSize = "medium";
+  }
+} );
+
+document.addEventListener ("keydown", function (zEvent) {
+  if (zEvent.altKey  &&  zEvent.key === "2") {  
+    document.querySelector("html").style.fontSize = "large";
+  }
+} );
+
+document.addEventListener ("keydown", function (zEvent) {
+  if (zEvent.altKey  &&  zEvent.key === "3") {  
+    document.querySelector("html").style.fontSize = "x-large";
+  }
+} );
+document.addEventListener ("keydown", function (zEvent) {
+  if (zEvent.altKey  &&  zEvent.key === "4") {  
+    document.querySelector("html").style.fontSize = "xx-large";
+  }
+} );
+//////////////////////////////////////////////////////////
