@@ -66,25 +66,30 @@ document.addEventListener("keydown", function (e) {
 function changeColor(key) {
   switch (key) {
     case "c":
-      document.querySelector("html").style.backgroundColor = createRandomColor();
+      document.querySelector(
+        "html"
+      ).style.backgroundColor = createRandomColor();
       break;
     case "1":
+      document.querySelector("html").style.fontSize = "medium";
+      break;
+    case "2":
       document.querySelector("html").style.fontSize = "large";
       break;
-      case "2": 
+    case "3":
       document.querySelector("html").style.fontSize = "x-large";
       break;
-      case "3":
-        document.querySelector("html").style.fontSize ="xx-large";
-
+    case "4":
+      document.querySelector("html").style.fontSize = "xx-large";
+      break;
     default:
       console.log(colorInnerHTML);
   }
 }
 
 ///////////////////////////
-// function to create random color  
-function createRandomColor(){
+// function to create random color
+function createRandomColor() {
   const hexParts = "0123456789ABCDEF";
   let color = "#";
   for (let i = 0; i < 6; i++) {
@@ -92,4 +97,3 @@ function createRandomColor(){
   }
   return color;
 }
-
