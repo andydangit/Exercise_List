@@ -109,9 +109,11 @@ i{
 }
 
 .note{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 10px;
     background-color: #98b8dd;
-    width: 300px;
+    width: 540px;
     margin-left: 20px;
 
 }
