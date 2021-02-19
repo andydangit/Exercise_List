@@ -59,31 +59,31 @@ function deleteTodo(e) {
 ///////////////////////////////////////////////////////////////
 // adding color change from click
 
-document.addEventListener("keydown", function (e) {
-  changeColor(e.key);
-});
+// document.addEventListener("keydown", function (e) {
+//   changeColor(e.key);
+// });
 
-function changeColor(key) {
-  switch (key) {
-    case "c":
-      document.querySelector("html").style.backgroundColor = createRandomColor();
-      break;
-    case "1":
-      document.querySelector("html").style.fontSize = "medium";
-      break;
-    case "2":
-      document.querySelector("html").style.fontSize = "large";
-      break;
-    case "3":
-      document.querySelector("html").style.fontSize = "x-large";
-      break;
-    case "4":
-      document.querySelector("html").style.fontSize = "xx-large";
-      break;
-    default:
-      console.log(colorInnerHTML);
-  }
-}
+// function changeColor(key) {
+//   switch (key) {
+//     case "c":
+//       document.querySelector("html").style.backgroundColor = createRandomColor();
+//       break;
+//     case "1":
+//       document.querySelector("html").style.fontSize = "medium";
+//       break;
+//     case "2":
+//       document.querySelector("html").style.fontSize = "large";
+//       break;
+//     case "3":
+//       document.querySelector("html").style.fontSize = "x-large";
+//       break;
+//     case "4":
+//       document.querySelector("html").style.fontSize = "xx-large";
+//       break;
+//     default:
+//       console.log(colorInnerHTML);
+//   }
+// }
 
 ///////////////////////////
 // function to create random color
@@ -95,4 +95,11 @@ function createRandomColor() {
   }
   return color;
 }
+
+// this add the Alt + C to change the background color 
+document.addEventListener ("keydown", function (zEvent) {
+  if (zEvent.altKey  &&  zEvent.key === "c") {  // case sensitive
+    document.querySelector("html").style.backgroundColor = createRandomColor();
+  }
+} );
 
