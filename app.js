@@ -76,3 +76,14 @@ function changeColor(key) {
       console.log(colorInnerHTML);
   }
 }
+
+///////////////////////////
+function createRandomColor(){
+  const hexParts = "0123456789ABCDEF";
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    color += hexParts[Math.floor(Math.random() * 16)];
+  }
+  return 
+}
+
