@@ -102,7 +102,7 @@ function createRandomColor() {
 
 // this add the Alt + C to change the background color 
 document.addEventListener ("keydown", function (zEvent) {
-  if (zEvent.altKey  &&  zEvent.key === "c") {  // case sensitive
+  if (zEvent.altKey  &&  zEvent.key === "c") { 
     document.querySelector("html").style.backgroundColor = createRandomColor();
   }
 } );
@@ -128,6 +128,13 @@ document.addEventListener ("keydown", function (zEvent) {
 document.addEventListener ("keydown", function (zEvent) {
   if (zEvent.altKey  &&  zEvent.key === "4") {  
     document.querySelector("html").style.fontSize = "xx-large";
+  }
+} );
+
+// Mac Command + C
+document.addEventListener ("keydown", function (zEvent) {
+  if (zEvent.metaKey  &&  zEvent.key === "c") { 
+    document.querySelector("html").style.backgroundColor = createRandomColor();
   }
 } );
 //////////////////////////////////////////////////////////
