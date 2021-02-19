@@ -66,9 +66,7 @@ document.addEventListener("keydown", function (e) {
 function changeColor(key) {
   switch (key) {
     case "c":
-      document.querySelector(
-        "html"
-      ).style.backgroundColor = createRandomColor();
+      document.querySelector("html").style.backgroundColor = createRandomColor();
       break;
     case "1":
       document.querySelector("html").style.fontSize = "medium";
