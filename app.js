@@ -164,3 +164,9 @@ document.addEventListener ("keydown", function (mEvent) {
   }
 } );
 //////////////////////////////////////////////////////////
+
+//Quote api 
+
+let quote = document.querySelector('.quote');
+let text = document.querySelector(".quote_text");
+let author = document.querySelector("quote_author");
