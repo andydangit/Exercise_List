@@ -131,6 +131,13 @@ document.addEventListener ("keydown", function (zEvent) {
   }
 } );
 
+// Key Alt + n keyboard on window refresh quote / author
+document.addEventListener ("keydown", function (zEvent) {
+  if (zEvent.altKey  &&  zEvent.key === "q") {  
+    getQuote();
+  }
+} );
+
 ///////////////////////////////////////////////////
 
 
