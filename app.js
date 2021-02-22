@@ -143,7 +143,7 @@ document.addEventListener ("keydown", function (zEvent) {
 
 // For Mac cmd + C / cmd 1,2,3,4
 document.addEventListener ("keydown", function (mEvent) {
-  if (mEvent.metaKey  &&  zEvent.key === "c") { 
+  if (mEvent.altKey  &&  zEvent.key === "c") { 
     document.querySelector("html").style.backgroundColor = createRandomColor();
   }
 } );
