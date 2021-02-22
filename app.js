@@ -131,7 +131,7 @@ document.addEventListener ("keydown", function (zEvent) {
   }
 } );
 
-// Key Alt + n keyboard on window refresh quote / author
+// Window Alt + n keyboard to refresh quote / author
 document.addEventListener ("keydown", function (zEvent) {
   if (zEvent.altKey  &&  zEvent.key === "q") {  
     getQuote();
@@ -168,6 +168,13 @@ document.addEventListener ("keydown", function (mEvent) {
 document.addEventListener ("keydown", function (mEvent) {
   if (mEvent.metaKey  &&  zEvent.key === "4") { 
     document.querySelector("html").style.fontSize = "xx-large";
+  }
+} );
+
+// Mac keydown cmd + q to refresh quote / author
+document.addEventListener ("keydown", function (mEvent) {
+  if (mEvent.metaKey  &&  zEvent.key === "q") { 
+    getQuote();
   }
 } );
 //////////////////////////////////////////////////////////
