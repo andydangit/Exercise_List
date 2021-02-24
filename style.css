@@ -160,11 +160,20 @@ i{
     }
 
     form{
-width: 310px;
+width: 314px;
+
     }
     
     .exerciseList{
         border: solid yellow;
         width: 290px;
     }
+
+    .quote{
+        width: 310px;
+    }
+    .note{
+        width: 330px;
+    }
+
 }
