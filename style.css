@@ -202,3 +202,30 @@ i{
     }
 
 }
+
+/* Iphone smaller screen size */
+@media only screen and (min-width: 500px) and (max-width: 609px) {
+    html{
+        width: 500px;
+    }
+     body{
+        background-color: purple; 
+    } 
+
+    form{
+    width: 430px;
+
+    }
+    
+    .exerciseList{
+        width: 411px;
+    }
+
+    .quote{
+        width: 419px;
+    }
+    .note{
+        width: 440px;
+    }
+
+}
