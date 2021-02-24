@@ -154,25 +154,24 @@ i{
     html{
         width: 373px;
     }
-    body{
+    /* body{
         background-color: red; 
-    }
+    } */
 
     form{
-    width: 374px;
+    width: 500px;
 
     }
     
     .exerciseList{
-        border: solid yellow;
-        width: 374px;
+        width: 472px;
     }
 
     .quote{
-        width: 520px;
+        width: 485px;
     }
     .note{
-        width: 537px;
+        width: 505px;
     }
 
 }
@@ -182,9 +181,9 @@ i{
     html{
         width: 415px;
     }
-    body{
+    /* body{
         background-color: purple; 
-    }
+    } */
 
     form{
     width: auto;
@@ -192,7 +191,6 @@ i{
     }
     
     .exerciseList{
-        border: solid yellow;
         width: auto;
     }
 
