@@ -163,22 +163,20 @@ i{
     }
 
     form{
-/* width: 314px;
- */
- width: auto;
+    width: auto;
 
     }
     
     .exerciseList{
         border: solid yellow;
-        width: 290px;
+        width: auto;
     }
 
     .quote{
-        width: 310px;
+        width: 520px;
     }
     .note{
-        width: 330px;
+        width: 535px;
     }
 
 }
