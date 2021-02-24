@@ -150,22 +150,22 @@ i{
 /* Mobile design   */
 
 /* Iphone 6/7/8 */
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 10px) and (max-device-width: 375px) {
     html{
-        width: 375px;
+        width: 373px;
     }
     body{
         background-color: red; 
     }
 
     form{
-    width: auto;
+    width: 374px;
 
     }
     
     .exerciseList{
         border: solid yellow;
-        width: auto;
+        width: 374px;
     }
 
     .quote{
@@ -178,12 +178,12 @@ i{
 }
 
 /* Iphone 6/7/8 plus */
-@media only screen and (max-width: 415px) {
+@media only screen and (min-width: 376px) and (max-width: 415px) {
     html{
         width: 415px;
     }
     body{
-        background-color: red; 
+        background-color: purple; 
     }
 
     form{
