@@ -58,34 +58,6 @@ function deleteTodo(e) {
   item.classList.add("todo-list-item-fall");
 }
 
-///////////////////////////////////////////////////////////////
-// adding color change from click
-
-// document.addEventListener("keydown", function (e) {
-//   changeColor(e.key);
-// });
-
-// function changeColor(key) {
-//   switch (key) {
-//     case "c":
-//       document.querySelector("html").style.backgroundColor = createRandomColor();
-//       break;
-//     case "1":
-//       document.querySelector("html").style.fontSize = "medium";
-//       break;
-//     case "2":
-//       document.querySelector("html").style.fontSize = "large";
-//       break;
-//     case "3":
-//       document.querySelector("html").style.fontSize = "x-large";
-//       break;
-//     case "4":
-//       document.querySelector("html").style.fontSize = "xx-large";
-//       break;
-//     default:
-//       console.log(colorInnerHTML);
-//   }
-// }
 
 ///////////////////////////
 // Create random color

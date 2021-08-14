@@ -15,7 +15,7 @@ html{
     font-family: 'Raleway', sans-serif;
 }
 
-.logo{
+.headline{
     display: flex;
     margin: auto;
     flex-direction: column;
@@ -154,9 +154,10 @@ i{
     html{
         width: 373px;
     }
-    /* body{
-        background-color: red; 
-    } */
+
+    .container{ 
+        padding-left: 25px;
+    }
 
     form{
     width: 500px;
@@ -208,9 +209,7 @@ i{
     html{
         width: 500px;
     }
-     body{
-        background-color: purple; 
-    } 
+
 
     form{
     width: 430px;
